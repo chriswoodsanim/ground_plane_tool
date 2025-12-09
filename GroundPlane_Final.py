@@ -12,7 +12,7 @@ def createPlane():
        
     # Creates plane
 
-    mc.polyPlane(w = (planeWidth * 100), h = (planeLength * 100), n='GroundPlane_01')
+    mc.polyPlane(w = (planeWidth * 100), h = (planeLength * 100), sh = 8, sw = 8, n='GroundPlane_01')
     mc.group('GroundPlane_01', n='GroundPlane_GRP')
 
     # Creates layer and sets to reference
@@ -155,7 +155,7 @@ def getSettings():
             f.write(listItem)
             f.write('\n')
         
-    print userSettings
+    print(userSettings)
     
     
     
@@ -222,7 +222,7 @@ def optionsWindow():
         mc.radioButton('circleButton', label = 'Circle')
         mc.radioButton('squareButton', label = 'Square', sl = True)
     else:
-        print "User settings error. line 1 in UserSettings.txt should be 'Circle' or 'Square'"
+        print("User settings error. line 1 in UserSettings.txt should be 'Circle' or 'Square'")
     mc.text(label = 'Size')
     mc.intSliderGrp('width', label = 'Width (m)', cal = [1, 'left'], v = int(userSettings[1]), max = 100, min = 2, field = True)
     mc.intSliderGrp('length', label = 'Length (m)', cal = [1, 'left'], v = int(userSettings[2]), max = 100, min = 2,  field = True)
