@@ -1,4 +1,4 @@
-The Ultimate Ground Plane Tool
+# The Ultimate Ground Plane Tool
 
 To install, place the "GroundPlane_Final.py" and "GroundPlane_userSettings.txt" files into this folder - 
 
@@ -23,7 +23,9 @@ Ensuring you are on the shelf where you want this tool icon to exist, hit the "E
 
 This should create a shelf button.
 
-single click will create a plane
-double click will give you the options window. 
+# Instructions for Use
+
+- single click will create a plane 
+- double click will give you the options window. 
 
 Your ground plane settings will be saved for future Maya scenes. 
