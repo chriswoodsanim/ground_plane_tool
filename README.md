@@ -9,7 +9,7 @@ Then open yourself up a fresh Maya scene and open the script editor.
 Copy the following code into a Python tab (Command > New Tab...)
 
 
-##### CODE START #####
+\#\#\#\#\# CODE START \#\#\#\#\#
 
 import maya.cmds as mc
 
